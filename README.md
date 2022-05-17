@@ -13,4 +13,4 @@ The process of Data Science has 5 Main parts:
 
 5.Data Visualization applied in the previous processes 
 
-In this Reposetory I will add all my notebooks that I used during my career in Data Science orderd according the previous 5 parts
+In this Repository I will add all my notebooks that I used during my career in Data Science orderd according the previous 5 parts
