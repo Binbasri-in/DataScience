@@ -1,0 +1,34 @@
+
+Sprocket Central Pty Ltd,
+After pre-previewing the datasets that was sent from your side which are:
+
+- Customer Demographic 
+
+- Customer Addresses
+
+- Transactions data in the past 3 months
+
+The result is like follow:
+
+ANALYZING ADDRESS DATASET:
+Using describe, head and tail methods we got:
+- at The customer_id column, The last customer id is 4003 but the number of the available data is 3999, that mean 4 are missing
+- at state column, name of state is not standard and different for same state, for example NSW and New South Wales where they refer to the same.
+- Data type of columns (country, state, address) need to be changed
+
+ANALYZING TRANSACTION DATASET:
+From Transaction dataset, by describe, head and tail methods we got:
+- Empty fields are found at the columns (online_order : 360 , brand : 197 , product_line , product_class : 197 , product_size : 197 , standard_cost : 197 , product_first_sold_date : 197)
+- It is better to change the repeated values at columns (online_order, order_status, product_line, product_class,  product_size) into a numeric value to make it easier to evaluate and analyze.
+- data type of columns (transaction_date, online_order, order_status, brand, product_line, product_class, product_size, standard_cost)
+
+ANALYZING CUSTOMERS DATASET:
+From Customers DataSet, It has:
+- The column default contains many wrong and dangerous entries, when entering data there should be, standardized encoding, check dangerous entries like data injections or JavaScript attacks, also harmful values that exceed the capacity of memory or processing.
+- The security aspects are very important to consider during data entry to eliminate any danger move that could destroy the dataset.
+- Empty or missing data at columns (last name : 125 , DOB : 87 , job_title : 506 , job_industry_category : 656 , tenure : 87)
+- wrong data types for columns (first_name, last_name, gender, DOB, job_title, job_industry_category, wealth_segment, deceased_indicator, owns_car)
+- change the columns with repeated values to numeric values analyze them easily.
+- The DOB impossible values there should be a specific range of age.
+
+Check this link for the Notebook used for this evaluation
